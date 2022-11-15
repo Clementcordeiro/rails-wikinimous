@@ -1,0 +1,10 @@
+<h1>TOUS LES ARTICLES</h1>
+<%= link_to "New Article", new_article_path(@article)%>
+
+<ul class="list-unstyled">
+  <div class="article_list">
+    <%@articles.each do |a|%>
+      <li><%= link_to a.title, article_path(a)%><p><%= a.content%></p></li>
+    <% end %>
+  </div>
+</ul>

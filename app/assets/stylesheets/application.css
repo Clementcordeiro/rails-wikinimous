@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+ .article_list a {
+  font-weight: bolder;
+  font-size: 24px;
+  color: #555FB5;
+  text-decoration: none;
+ }
+
+

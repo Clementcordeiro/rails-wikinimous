@@ -1,0 +1,11 @@
+<h1><%=@article.title%>
+    <%= link_to "🗑",
+     article_path(@article),
+      data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}%>
+    <%= link_to "✎",
+      edit_article_path(@article)%></h1>
+<p><%=@article.content%></p>
+
+
+<%= link_to "Wikinimous",
+    articles_path(@article)%> 
